@@ -23,7 +23,6 @@ while count < 3:
         user_answer = input(f'Question: {number}: ')
 
         if user_answer in valid_answers:
-            print('Correct!')
             break
         else:
             print("Your answer isn't valid, type 'yes' or 'no'")
