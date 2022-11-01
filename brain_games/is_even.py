@@ -10,7 +10,7 @@ def greeting():
 
 def get_number():
 
-    number = randint(-1000000, 1000000)
+    number = randint(-100, 100)
     return number
 
 
@@ -37,7 +37,7 @@ def get_valid_answer(num):
     return answer
 
 
-def run_game():
+def is_even_run():
 
     task = "Answer 'yes' if the number is even, otherwise answer 'no'."
     count = 0
@@ -53,14 +53,14 @@ def run_game():
         if user_answer == right_answer:
             print('Correct!')
             count += 1
+            if count == 3:
+                print(f'Congratulations, {user_name}!')
+                break
         else:
             print(f"'{user_answer}' is wrong answer ;(."
                   f" Correct answer was '{right_answer}'.")
             print(f"Let's try again, {user_name}!")
             break
 
-    if count == 3:
-        print(f'Congratulations, {user_name}!')
 
-
-run_game()
+is_even_run()
