@@ -5,7 +5,6 @@ from brain_games.is_even import is_even_run
 
 def main():
 
-    print("Welcome to the Brain Games!")
     is_even_run()
 
 

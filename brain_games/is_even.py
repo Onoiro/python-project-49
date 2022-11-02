@@ -1,11 +1,12 @@
 from random import randint
+from greeting import greeting
 
 
-def greeting():
+'''def greeting():
 
     name = input('May I have your name? ')
     print(f'Hello, {name}!')
-    return name
+    return name'''
 
 
 def get_number():
