@@ -18,14 +18,16 @@ def get_valid_answer(exp):
 
     while True:
         answer = input(f'Question: {exp}: ')
-        break
+        #break
 
-        '''if type(answer) is int:
-            break
+        try:
+            answer = int(answer)
+        except:
+            print("Your answer isn't valid, enter integer")
         else:
-            print("Your answer isn't valid, enter integer")'''
+            break
     
-    return int(answer)
+    return answer
 
 
 def calc_it_run():
