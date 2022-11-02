@@ -17,6 +17,16 @@ def is_even_number(num):
     return answer
 
 
+def build_task():
+    
+    task = "Answer 'yes' if the number is even, otherwise answer 'no'."
+    print(task)
+    current_number = get_number()
+    right_answer = is_even_number(current_number)
+    user_answer = get_valid_answer(current_number)
+    return right_answer, user_answer
+
+
 def get_valid_answer(num):
 
     valid_answers = ('yes', 'no')
@@ -31,18 +41,14 @@ def get_valid_answer(num):
     return answer
 
 
-def is_even_run():
+def game_run():
 
-    task = "Answer 'yes' if the number is even, otherwise answer 'no'."
-    count = 0
     user_name = greeting()
-    print(task)
-
+    
+    count = 0
     while count < 3:
 
-        current_number = get_number()
-        right_answer = is_even_number(current_number)
-        user_answer = get_valid_answer(current_number)
+        right_answer, user_answer = build_task()
 
         if user_answer == right_answer:
             print('Correct!')
@@ -57,4 +63,4 @@ def is_even_run():
             break
 
 
-is_even_run()
+game_run()
