@@ -1,5 +1,6 @@
 from random import randint
 from greeting import greeting
+from game_play import print_messages
 
 
 def get_number():
@@ -44,22 +45,12 @@ def get_valid_answer(num):
 def game_run():
 
     user_name = greeting()
-    
-    count = 0
-    while count < 3:
+    status_answers = 0
+    while status_answers < 3:
 
         right_answer, user_answer = build_task()
-
-        if user_answer == right_answer:
-            print('Correct!')
-            count += 1
-            if count == 3:
-                print(f'Congratulations, {user_name}!')
-                break
-        else:
-            print(f"'{user_answer}' is wrong answer ;(."
-                  f" Correct answer was '{right_answer}'.")
-            print(f"Let's try again, {user_name}!")
+        status_answers = print_messages(right_answer, user_answer, user_name, status_answers)
+        if status_answers == 0:
             break
 
 
