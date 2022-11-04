@@ -9,7 +9,7 @@ def print_messages(result, answer, name, answer_status):
 
     else:
         message = f"'{answer}' is wrong answer ;(. \
-        Correct answer was '{result}'.\nLet's try again, {name}!"
+Correct answer was '{result}'.\nLet's try again, {name}!"
         answer_status = 0
 
     print(message)
