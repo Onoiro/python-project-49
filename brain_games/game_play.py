@@ -8,7 +8,8 @@ def print_messages(result, answer, name, answer_status):
             message = f'Correct!\nCongratulations, {name}!'
 
     else:
-        message = f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.\nLet's try again, {name}!"
+        message = f"'{answer}' is wrong answer ;(. \
+        Correct answer was '{result}'.\nLet's try again, {name}!"
         answer_status = 0
 
     print(message)
