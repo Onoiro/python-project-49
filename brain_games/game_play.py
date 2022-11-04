@@ -1,13 +1,26 @@
-from is_even import build_task
-from calc_it import build_task
+from random import randint
+import is_even
+import calc_it
+
+
+def choose_game():
+    game_task = input('choose game:\n\
+is even number (1): \n\
+calculate this (2): \n: ')
+    return game_task
 
 def game_run():
 
     user_name = greeting()
+    game_number = choose_game()
+    print(game_number)
+    
     count = 0
     while count < 3:
-
-        right_answer, user_answer = build_task()
+        if game_number == '1':
+            right_answer, user_answer = is_even.build_task()
+        elif game_number == '2':
+            right_answer, user_answer = calc_it.build_task()
         count = print_messages\
 (right_answer, user_answer, user_name, count)
         if count == 0:
