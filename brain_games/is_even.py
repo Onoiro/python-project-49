@@ -1,6 +1,4 @@
 from random import randint
-from greeting import greeting
-from game_play import print_messages
 
 
 def get_number():
@@ -40,18 +38,3 @@ def get_valid_answer(num):
         else:
             print("Your answer isn't valid, type 'yes' or 'no'")
     return answer
-
-
-def game_run():
-
-    user_name = greeting()
-    status_answers = 0
-    while status_answers < 3:
-
-        right_answer, user_answer = build_task()
-        status_answers = print_messages(right_answer, user_answer, user_name, status_answers)
-        if status_answers == 0:
-            break
-
-
-game_run()

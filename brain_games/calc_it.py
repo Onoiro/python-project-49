@@ -1,26 +1,9 @@
 from random import randint
-from greeting import greeting
-from game_play import print_messages
 
 def get_number():
 
     number = randint(-100, 100)
     return number
-
-
-def get_valid_answer(exp):
-
-    while True:
-        answer = input(f'Question: {exp}: ')
-
-        try:
-            answer = int(answer)
-        except:
-            print("Your answer isn't valid, enter integer")
-        else:
-            break
-    
-    return answer
 
 
 def build_task():
@@ -43,16 +26,17 @@ def build_task():
     return right_answer, user_answer
 
 
-def game_run():
+def get_valid_answer(exp):
 
-    user_name = greeting()
-    status_answers = 0
-    while status_answers < 3:
+    while True:
+        answer = input(f'Question: {exp}: ')
 
-        right_answer, user_answer = build_task()
-        status_answers = print_messages(right_answer, user_answer, user_name, status_answers)
-        if status_answers == 0:
+        try:
+            answer = int(answer)
+        except:
+            print("Your answer isn't valid, enter integer")
+        else:
             break
+    
+    return answer
 
-
-game_run()
