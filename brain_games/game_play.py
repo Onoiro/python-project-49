@@ -1,6 +1,6 @@
-from random import randint
-import is_even
-import calc_it
+
+from brain_games import is_even
+from brain_games import calc_it
 
 
 def choose_game():
@@ -13,7 +13,6 @@ def game_run():
 
     user_name = greeting()
     game_number = choose_game()
-    print(game_number)
     
     count = 0
     while count < 3:
