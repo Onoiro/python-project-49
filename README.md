@@ -5,3 +5,6 @@
 
 ### refer to asciinema video
 https://asciinema.org/a/68M3m2IRSUgnMPx9SUigGHNMl
+
+### refer to asciinema video #2
+https://asciinema.org/a/XakFhuY2MNGpQWWgDbuGieLYL
