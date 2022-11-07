@@ -3,6 +3,14 @@ from brain_games import is_even
 from brain_games import calc_it
 
 
+def greeting():
+
+    print("Welcome to the Brain Games!")
+    name = input('May I have your name? ')
+    print(f'Hello, {name}!')
+    return name
+
+
 def choose_game():
     game_task = input('choose game:\n\
 is even number (1): \n\
@@ -14,26 +22,18 @@ def game_run():
     user_name = greeting()
     game_number = choose_game()
     
-    count = 0
-    while count < 3:
+    answers_count = 0
+    while answers_count < 3:
         if game_number == '1':
             right_answer, user_answer = is_even.build_task()
         elif game_number == '2':
             right_answer, user_answer = calc_it.build_task()
-        count = print_messages\
-(right_answer, user_answer, user_name, count)
-        if count == 0:
+        answers_count = print_messages\
+(right_answer, user_answer, user_name, answers_count)
+        if answers_count == 0:
             break
 
-    return right_answer, user_answer, user_name, count
-
-
-def greeting():
-
-    print("Welcome to the Brain Games!")
-    name = input('May I have your name? ')
-    print(f'Hello, {name}!')
-    return name
+    return right_answer, user_answer, user_name, answers_count
 
 
 def print_messages(result, answer, name, count):
@@ -53,4 +53,4 @@ Correct answer was '{result}'.\nLet's try again, {name}!"
 
     return count
 
-game_run()
+#game_run()
