@@ -1,6 +1,7 @@
 
 from brain_games import is_even
 from brain_games import calc_it
+from brain_games import find_gcd
 
 
 def greeting():
@@ -12,9 +13,11 @@ def greeting():
 
 
 def choose_game():
-    game_task = input('choose game:\n\
-is even number (1): \n\
-calculate this (2): \n: ')
+    game_task = input('choose game (type number of game):\n\
+define if number is even     (1): \n\
+find result of expression    (2): \n\
+find greatest common divisor (3): \n\
+:')
     return game_task
 
 def game_run():
@@ -28,6 +31,8 @@ def game_run():
             right_answer, user_answer = is_even.build_task()
         elif game_number == '2':
             right_answer, user_answer = calc_it.build_task()
+        elif game_number == '3':
+            right_answer, user_answer = find_gcd.build_task()
         answers_count = print_messages\
 (right_answer, user_answer, user_name, answers_count)
         if answers_count == 0:
