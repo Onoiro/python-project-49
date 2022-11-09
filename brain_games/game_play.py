@@ -2,6 +2,7 @@
 from brain_games import is_even
 from brain_games import calc_it
 from brain_games import find_gcd
+from brain_games import find_number
 
 
 def greeting():
@@ -17,6 +18,7 @@ def choose_game():
 define if number is even     (1): \n\
 find result of expression    (2): \n\
 find greatest common divisor (3): \n\
+find missing number          (4): \n\
 :')
     return game_task
 
@@ -33,6 +35,8 @@ def game_run():
             right_answer, user_answer = calc_it.build_task()
         elif game_number == '3':
             right_answer, user_answer = find_gcd.build_task()
+        elif game_number == '4':
+            right_answer, user_answer = find_number.build_task()
         answers_count = print_messages\
 (right_answer, user_answer, user_name, answers_count)
         if answers_count == 0:
