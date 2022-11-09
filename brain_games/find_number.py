@@ -44,7 +44,7 @@ def build_task():
     number1 = randint(1, 10)
     number2 = randint(1, 2)
     number3 = randint(2, 10)
-    missing_number_index = randint(1, 7)
+    missing_number_index = randint(1, 6)
     current_progression = get_progression(number1, number2, number3)
     right_answer = get_missing_number(current_progression, missing_number_index)
     task_string = get_task_string(current_progression, missing_number_index)
