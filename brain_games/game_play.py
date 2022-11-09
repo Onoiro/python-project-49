@@ -3,6 +3,7 @@ from brain_games import is_even
 from brain_games import calc_it
 from brain_games import find_gcd
 from brain_games import find_number
+from brain_games import is_prime
 
 
 def greeting():
@@ -19,6 +20,7 @@ define if number is even     (1): \n\
 find result of expression    (2): \n\
 find greatest common divisor (3): \n\
 find missing number          (4): \n\
+define if number is prime    (5): \n\
 :')
     return game_task
 
@@ -37,6 +39,8 @@ def game_run():
             right_answer, user_answer = find_gcd.build_task()
         elif game_number == '4':
             right_answer, user_answer = find_number.build_task()
+        elif game_number == '5':
+            right_answer, user_answer = is_prime.build_task()
         answers_count = print_messages\
 (right_answer, user_answer, user_name, answers_count)
         if answers_count == 0:
