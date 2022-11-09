@@ -14,3 +14,6 @@ https://asciinema.org/a/YFX4uFg2vCLa7RiUotoRtbw0V
 
 ### refer to asciinema video #4 - "find missing number"
 https://asciinema.org/a/g8JKfp4xneHRVTlEUbGFLsKQJ
+
+### refer to asciinema video #5 - "define if number is prime"
+https://asciinema.org/a/1epkOSnALxiGmLLWYE7tdXBMV
