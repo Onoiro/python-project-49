@@ -11,3 +11,6 @@ https://asciinema.org/a/XakFhuY2MNGpQWWgDbuGieLYL
 
 ### refer to asciinema video #3 - "find greatest common divisor"
 https://asciinema.org/a/YFX4uFg2vCLa7RiUotoRtbw0V
+
+### refer to asciinema video #4 - "find missing number"
+https://asciinema.org/a/g8JKfp4xneHRVTlEUbGFLsKQJ
