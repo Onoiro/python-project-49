@@ -41,16 +41,7 @@ def game_run(game_number):
 
     answers_count = 0
     while answers_count < 3:
-        if game_number == '1':
-            right_answer, user_answer = is_even.build_task()
-        elif game_number == '2':
-            right_answer, user_answer = calc_it.build_task()
-        elif game_number == '3':
-            right_answer, user_answer = find_gcd.build_task()
-        elif game_number == '4':
-            right_answer, user_answer = find_number.build_task()
-        elif game_number == '5':
-            right_answer, user_answer = is_prime.build_task()
+        right_answer, user_answer = get_answers(game_number)
 
         answers_count = print_messages\
 (right_answer, user_answer, user_name, answers_count)
@@ -59,6 +50,22 @@ def game_run(game_number):
             break
 
     return right_answer, user_answer, user_name, answers_count
+
+def get_answers(number):
+
+    if number == '1':
+        result, answer = is_even.build_task()
+    elif number == '2':
+        result, answer = calc_it.build_task()
+    elif number == '3':
+        result, answer = find_gcd.build_task()
+    elif number == '4':
+        result, answer = find_number.build_task()
+    elif number == '5':
+        result, answer = is_prime.build_task()
+    
+    return result, answer
+
 
 
 def print_messages(result, answer, name, count):
