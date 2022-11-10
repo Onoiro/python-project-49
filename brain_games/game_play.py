@@ -1,4 +1,4 @@
-
+import prompt
 from brain_games import is_even
 from brain_games import calc_it
 from brain_games import find_gcd
@@ -9,19 +9,19 @@ from brain_games import is_prime
 def greeting():
 
     print("Welcome to the Brain Games!")
-    name = input('May I have your name? ')
+    name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     return name
 
 
 def choose_game():
-    game_task = input('choose game (type number of game):\n\
+    game_task = prompt.string('choose game (type number of game):\n\
 define if number is even     (1): \n\
 find result of expression    (2): \n\
 find greatest common divisor (3): \n\
 find missing number          (4): \n\
 define if number is prime    (5): \n\
-:')
+: ')
     return game_task
 
 def game_run(game_number):

@@ -4,6 +4,7 @@ from random import randint
 def get_number():
 
     number = randint(1, 100)
+    
     return number
 
 
@@ -27,6 +28,7 @@ def build_task():
     current_number = get_number()
     right_answer = is_prime_number(current_number)
     user_answer = get_valid_answer(current_number)
+    
     return right_answer, user_answer
 
 

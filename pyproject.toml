@@ -4,7 +4,6 @@ version = "0.6.0"
 description = ""
 authors = ["Andrey Bogatyrev <t2way@yandex.ru>"]
 readme = "README.md"
-#packages = [{include = "hexlet_code"}]
 packages = [{include = "brain_games"}]
 
 
