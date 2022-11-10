@@ -17,7 +17,7 @@ def is_even_number(num):
 
 
 def build_task():
-    
+
     task = "Answer 'yes' if the number is even, otherwise answer 'no'."
     print(task)
     current_number = get_number()

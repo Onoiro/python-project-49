@@ -24,13 +24,13 @@ define if number is prime    (5): \n\
 : ')
     return game_task
 
+
 def game_run(game_number):
 
     user_name = greeting()
     if game_number == 0:
         game_number = choose_game()
-    
-    
+
     answers_count = 0
     while answers_count < 3:
         if game_number == '1':
@@ -43,7 +43,7 @@ def game_run(game_number):
             right_answer, user_answer = find_number.build_task()
         elif game_number == '5':
             right_answer, user_answer = is_prime.build_task()
-        
+
         answers_count = print_messages\
 (right_answer, user_answer, user_name, answers_count)
 
@@ -54,7 +54,7 @@ def game_run(game_number):
 
 
 def print_messages(result, answer, name, count):
-        
+
     if answer == result:
         message = 'Correct!'
         count += 1

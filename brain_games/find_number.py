@@ -13,7 +13,7 @@ def get_progression(first_number, operator, prog_step):
             prog_number = first_number * prog_step
             first_number = first_number * prog_step
             progression.append(prog_number)
-            
+
     return progression
 
 
@@ -32,13 +32,12 @@ def get_task_string(numbers_list, index):
             new_string += '.. '
         else:
             new_string += str(f'{numbers_list[i]} ')
-        
-    
+
     return new_string
 
 
 def build_task():
-    
+
     task = "What number is missing in the progression?"
     print(task)
     number1 = randint(1, 10)
@@ -49,7 +48,7 @@ def build_task():
     right_answer = get_missing_number(current_progression, missing_number_index)
     task_string = get_task_string(current_progression, missing_number_index)
     user_answer = get_valid_answer(task_string)
-    
+
     return right_answer, user_answer
 
 
@@ -60,9 +59,9 @@ def get_valid_answer(exp):
 
         try:
             answer = int(answer)
-        except:
+        except ValueError:
             print("Your answer isn't valid, enter integer")
         else:
             break
-    
+
     return answer

@@ -14,12 +14,12 @@ def get_gcd(num1, num2):
             num1 = num1 - num2
         else:
             num2 = num2 - num1
-    
+
     return num1
 
 
 def build_task():
-    
+
     task = "Find the greatest common divisor of given numbers."
     print(task)
     current_number_1 = get_number()
@@ -27,7 +27,7 @@ def build_task():
     right_answer = get_gcd(current_number_1, current_number_2)
     current_numbers = f'{current_number_1} {current_number_2}'
     user_answer = get_valid_answer(current_numbers)
-    
+
     return right_answer, user_answer
 
 
@@ -38,9 +38,9 @@ def get_valid_answer(exp):
 
         try:
             answer = int(answer)
-        except:
+        except ValueError:
             print("Your answer isn't valid, enter integer")
         else:
             break
-    
+
     return answer
