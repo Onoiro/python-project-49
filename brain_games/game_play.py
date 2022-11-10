@@ -43,13 +43,13 @@ def game_run(game_number):
     while answers_count < 3:
         right_answer, user_answer = get_answers(game_number)
 
-        answers_count = print_messages\
-(right_answer, user_answer, user_name, answers_count)
-
+        answers_count = print_messages(right_answer, user_answer, 
+                                       user_name, answers_count)
         if answers_count == 0:
             break
 
     return right_answer, user_answer, user_name, answers_count
+
 
 def get_answers(number):
 
@@ -63,9 +63,8 @@ def get_answers(number):
         result, answer = find_number.build_task()
     elif number == '5':
         result, answer = is_prime.build_task()
-    
-    return result, answer
 
+    return result, answer
 
 
 def print_messages(result, answer, name, count):
@@ -75,7 +74,6 @@ def print_messages(result, answer, name, count):
         count += 1
         if count == 3:
             message = f'Correct!\nCongratulations, {name}!'
-
     else:
         message = f"'{answer}' is wrong answer ;(. \
 Correct answer was '{result}'.\nLet's try again, {name}!"
