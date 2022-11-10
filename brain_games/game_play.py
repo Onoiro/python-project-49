@@ -15,13 +15,21 @@ def greeting():
 
 
 def choose_game():
-    game_task = prompt.string('choose game (type number of game):\n\
-define if number is even     (1): \n\
-find result of expression    (2): \n\
-find greatest common divisor (3): \n\
-find missing number          (4): \n\
-define if number is prime    (5): \n\
-: ')
+
+    while True:
+        game_task = prompt.string('choose game (type number of game):\n\
+    define if number is even     (1): \n\
+    find result of expression    (2): \n\
+    find greatest common divisor (3): \n\
+    find missing number          (4): \n\
+    define if number is prime    (5): \n\
+    : ')
+
+        if game_task in ('1', '2', '3', '4', '5'):
+            break
+        else:
+            print("Your answer isn't valid, type 1, 2, 3, 4 or 5")
+
     return game_task
 
 
