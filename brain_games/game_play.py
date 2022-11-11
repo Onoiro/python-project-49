@@ -41,7 +41,9 @@ def game_run(game_number):
 
     answers_count = 0
     while answers_count < 3:
-        right_answer, task_value = get_results(game_number)
+        right_answer, task_value, game_task = get_results(game_number)
+        if answers_count == 0:
+            print(game_task)
         user_answer = get_valid_answer(task_value, game_number)
 
         answers_count = print_messages(right_answer, user_answer, 
@@ -53,17 +55,17 @@ def game_run(game_number):
 def get_results(number):
 
     if number == '1':
-        result, value = is_even.build_task()
+        result, value, task = is_even.build_task()
     elif number == '2':
-        result, value = calc_it.build_task()
+        result, value, task = calc_it.build_task()
     elif number == '3':
-        result, value = find_gcd.build_task()
+        result, value, task = find_gcd.build_task()
     elif number == '4':
-        result, value = find_number.build_task()
+        result, value, task = find_number.build_task()
     elif number == '5':
-        result, value = is_prime.build_task()
+        result, value, task = is_prime.build_task()
 
-    return result, value
+    return result, value, task
 
 
 def get_valid_answer(value, number):

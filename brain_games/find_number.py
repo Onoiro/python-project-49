@@ -39,7 +39,6 @@ def get_task_string(numbers_list, index):
 def build_task():
 
     task = "What number is missing in the progression?"
-    print(task)
     number1 = randint(1, 10)
     number2 = randint(1, 2)
     number3 = randint(2, 10)
@@ -48,4 +47,4 @@ def build_task():
     right_answer = get_missing_number(current_progression, missing_number_index)
     task_string = get_task_string(current_progression, missing_number_index)
 
-    return right_answer, task_string
+    return right_answer, task_string, task

@@ -24,8 +24,7 @@ def is_prime_number(num):
 def build_task():
 
     task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    print(task)
     current_number = get_number()
     right_answer = is_prime_number(current_number)
 
-    return right_answer, current_number
+    return right_answer, current_number, task

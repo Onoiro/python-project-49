@@ -21,11 +21,9 @@ def get_gcd(num1, num2):
 def build_task():
 
     task = "Find the greatest common divisor of given numbers."
-    print(task)
     current_number_1 = get_number()
     current_number_2 = get_number()
     right_answer = get_gcd(current_number_1, current_number_2)
     current_numbers = f'{current_number_1} {current_number_2}'
 
-    return right_answer, current_numbers
-
+    return right_answer, current_numbers, task
