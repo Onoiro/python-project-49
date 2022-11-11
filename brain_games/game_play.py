@@ -6,6 +6,25 @@ from brain_games import find_number
 from brain_games import is_prime
 
 
+def game_run(game_number):
+
+    user_name = greeting()
+    if game_number == 0:
+        game_number = choose_game()
+
+    answers_count = 0
+    while answers_count < 3:
+        right_answer, task_value, game_task = get_results(game_number)
+        if answers_count == 0:
+            print(game_task)
+        user_answer = get_valid_answer(task_value, game_number)
+
+        answers_count = print_messages(right_answer, user_answer, 
+                                       user_name, answers_count)
+        if answers_count == 0:
+            break
+
+
 def greeting():
 
     print("Welcome to the Brain Games!")
@@ -31,25 +50,6 @@ def choose_game():
             print("Your choose isn't valid, type 1, 2, 3, 4 or 5")
 
     return game_task
-
-
-def game_run(game_number):
-
-    user_name = greeting()
-    if game_number == 0:
-        game_number = choose_game()
-
-    answers_count = 0
-    while answers_count < 3:
-        right_answer, task_value, game_task = get_results(game_number)
-        if answers_count == 0:
-            print(game_task)
-        user_answer = get_valid_answer(task_value, game_number)
-
-        answers_count = print_messages(right_answer, user_answer, 
-                                       user_name, answers_count)
-        if answers_count == 0:
-            break
 
 
 def get_results(number):
