@@ -5,8 +5,7 @@ from brain_games.game_play import game_run
 
 def main():
 
-    task_number = '4'
-    game_run(task_number)
+    game_run('4')
 
 
 if __name__ == '__main__':
