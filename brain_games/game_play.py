@@ -73,7 +73,7 @@ def get_valid_answer(value, number):
     while True:
 
         answer = prompt.string(f'Question: {value}\nYour answer: ')
-        
+
         if number in ('1', '5'):
             if answer in ('yes', 'no'):
                 return answer
