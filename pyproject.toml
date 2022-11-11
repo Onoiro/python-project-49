@@ -13,7 +13,7 @@ prompt = "^0.4.1"
 
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_play:main"
+#brain-games = "brain_games.scripts.brain_play:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
