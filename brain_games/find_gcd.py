@@ -26,21 +26,6 @@ def build_task():
     current_number_2 = get_number()
     right_answer = get_gcd(current_number_1, current_number_2)
     current_numbers = f'{current_number_1} {current_number_2}'
-    user_answer = get_valid_answer(current_numbers)
 
-    return right_answer, user_answer
+    return right_answer, current_numbers
 
-
-def get_valid_answer(exp):
-
-    while True:
-        answer = input(f'Question: {exp}: ')
-
-        try:
-            answer = int(answer)
-        except ValueError:
-            print("Your answer isn't valid, enter integer")
-        else:
-            break
-
-    return answer

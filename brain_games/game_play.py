@@ -28,7 +28,7 @@ def choose_game():
         if game_task in ('1', '2', '3', '4', '5'):
             break
         else:
-            print("Your answer isn't valid, type 1, 2, 3, 4 or 5")
+            print("Your choose isn't valid, type 1, 2, 3, 4 or 5")
 
     return game_task
 
@@ -41,30 +41,49 @@ def game_run(game_number):
 
     answers_count = 0
     while answers_count < 3:
-        right_answer, user_answer = get_answers(game_number)
+        right_answer, task_value = get_results(game_number)
+        user_answer = get_valid_answer(task_value, game_number)
 
         answers_count = print_messages(right_answer, user_answer, 
                                        user_name, answers_count)
         if answers_count == 0:
             break
 
-    return right_answer, user_answer, user_name, answers_count
 
-
-def get_answers(number):
+def get_results(number):
 
     if number == '1':
-        result, answer = is_even.build_task()
+        result, value = is_even.build_task()
     elif number == '2':
-        result, answer = calc_it.build_task()
+        result, value = calc_it.build_task()
     elif number == '3':
-        result, answer = find_gcd.build_task()
+        result, value = find_gcd.build_task()
     elif number == '4':
-        result, answer = find_number.build_task()
+        result, value = find_number.build_task()
     elif number == '5':
-        result, answer = is_prime.build_task()
+        result, value = is_prime.build_task()
 
-    return result, answer
+    return result, value
+
+
+def get_valid_answer(value, number):
+
+    while True:
+
+        answer = prompt.string(f'Question: {value}\nYour answer: ')
+        
+        if number in ('1', '5'):
+            if answer in ('yes', 'no'):
+                return answer
+            else:
+                print("Your answer isn't valid, type 'yes' or 'no'")
+        else:
+            try:
+                answer = int(answer)
+            except ValueError:
+                print("Your answer isn't valid, enter an integer")
+            else:
+                return answer
 
 
 def print_messages(result, answer, name, count):

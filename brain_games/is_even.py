@@ -22,19 +22,5 @@ def build_task():
     print(task)
     current_number = get_number()
     right_answer = is_even_number(current_number)
-    user_answer = get_valid_answer(current_number)
-    return right_answer, user_answer
 
-
-def get_valid_answer(num):
-
-    valid_answers = ('yes', 'no')
-
-    while True:
-        answer = input(f'Question: {num}: ')
-
-        if answer in valid_answers:
-            break
-        else:
-            print("Your answer isn't valid, type 'yes' or 'no'")
-    return answer
+    return right_answer, current_number

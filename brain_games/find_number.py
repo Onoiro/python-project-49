@@ -47,21 +47,5 @@ def build_task():
     current_progression = get_progression(number1, number2, number3)
     right_answer = get_missing_number(current_progression, missing_number_index)
     task_string = get_task_string(current_progression, missing_number_index)
-    user_answer = get_valid_answer(task_string)
 
-    return right_answer, user_answer
-
-
-def get_valid_answer(exp):
-
-    while True:
-        answer = input(f'Question: {exp}: ')
-
-        try:
-            answer = int(answer)
-        except ValueError:
-            print("Your answer isn't valid, enter integer")
-        else:
-            break
-
-    return answer
+    return right_answer, task_string

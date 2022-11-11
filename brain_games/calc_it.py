@@ -22,21 +22,19 @@ def build_task():
         expression = f"{first_number} - {second_number}"
         right_answer = first_number - second_number
 
-    user_answer = get_valid_answer(expression)
-
-    return right_answer, user_answer
+    return right_answer, expression
 
 
-def get_valid_answer(exp):
+'''def get_valid_answer(exp):
 
     while True:
-        answer = input(f'Question: {exp}: ')
+        answer = input(f'Question: {exp}:\nYour answer: ')
 
         try:
             answer = int(answer)
         except ValueError:
-            print("Your answer isn't valid, enter integer")
+            print("Your answer isn't valid, enter an integer")
         else:
             break
 
-    return answer
+    return answer'''
