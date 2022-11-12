@@ -19,7 +19,7 @@ def game_run(game_number):
             print(game_task)
         user_answer = get_valid_answer(task_value, game_number)
 
-        answers_count = print_messages(right_answer, user_answer, 
+        answers_count = print_messages(right_answer, user_answer,
                                        user_name, answers_count)
         if answers_count == 0:
             break
