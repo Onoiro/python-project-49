@@ -19,6 +19,7 @@ Minimal system requirements:
 
 To install Brain Games:
 - git clone git@github.com:Onoiro/python-project-49.git
+- poetry install
 - make build
 - make package-install
 - or (python3 -m pip install --user dist/*.whl)
