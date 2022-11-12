@@ -1,18 +1,13 @@
 from random import randint
 
 
-def get_progression(first_number, operator, prog_step):
+def get_progression(first_number, prog_step):
 
     progression = []
-    for i in range(1, 8):
-        if operator == 1:
-            prog_number = first_number + prog_step
-            first_number = first_number + prog_step
-            progression.append(prog_number)
-        elif operator == 2:
-            prog_number = first_number * prog_step
-            first_number = first_number * prog_step
-            progression.append(prog_number)
+    for i in range(1, 10):
+        prog_number = first_number + prog_step
+        first_number = first_number + prog_step
+        progression.append(prog_number)
 
     return progression
 
@@ -40,10 +35,9 @@ def build_task():
 
     task = "What number is missing in the progression?"
     number1 = randint(1, 10)
-    number2 = randint(1, 2)
     number3 = randint(2, 10)
-    missing_number_index = randint(1, 6)
-    current_progression = get_progression(number1, number2, number3)
+    missing_number_index = randint(1, 8)
+    current_progression = get_progression(number1, number3)
     right_answer = get_missing_number(current_progression, missing_number_index)
     task_string = get_task_string(current_progression, missing_number_index)
 
