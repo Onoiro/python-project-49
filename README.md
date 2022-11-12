@@ -22,7 +22,6 @@ To install Brain Games:
 - poetry install
 - make build
 - make package-install
-- or (python3 -m pip install --user dist/*.whl)
 
 To uninstall Brain Games:
 - python3 -m pip uninstall hexlet-code
