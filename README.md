@@ -16,7 +16,7 @@ The set contains five games:
 
 Minimal system requirements:
 - Linux or MacOS command line
-- python 3.8 and up installed
+- python 3.6.1 and up installed
 
 To install Brain Games use:
 - python3 -m pip install --user dist/*.whl
