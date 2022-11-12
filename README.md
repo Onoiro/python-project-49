@@ -4,7 +4,6 @@
 <a href="https://codeclimate.com/github/Onoiro/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/2af138e68148eb88cd92/maintainability" /></a>
 
 ### Welcome to the Brain Games!
-
 Brain Games is a set of CLI games for development of brain activity and improving mental counting skills.
 
 The set contains five games:
@@ -16,10 +15,16 @@ The set contains five games:
 
 Minimal system requirements:
 - Linux or MacOS command line
-- python 3.6.1 and up installed
+- python 3.6 and up installed
 
-To install Brain Games use:
-- python3 -m pip install --user dist/*.whl
+To install Brain Games:
+- git clone git@github.com:Onoiro/python-project-49.git
+- make build
+- make package-install
+- or (python3 -m pip install --user dist/*.whl)
+
+To uninstall Brain Games:
+- python3 -m pip uninstall hexlet-code
 
 To run Brain Games enter one of the following commands:
 - brain-even
