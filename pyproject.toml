@@ -1,10 +1,13 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.7.1"
-description = ""
+description = "Brain Games is a set of CLI games
+ for development of brain activity and improving mental counting skills"
 authors = ["Andrey Bogatyrev <t2way@yandex.ru>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
+classifiers = "Programming Language :: Python :: 3"
+repository = "https://github.com/Onoiro/python-project-49"
 
 
 [tool.poetry.dependencies]
