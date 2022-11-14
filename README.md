@@ -34,7 +34,6 @@ To run Brain Games enter one of the following commands:
 - brain-prime
 
 #### refer to video #1 - "installation of Brain Games"
-https://asciinema.org/a/548HmvdKwIpGN4rv2OYHAbkKK
 <a href="https://asciinema.org/a/548HmvdKwIpGN4rv2OYHAbkKK" target="_blank"><img src="https://asciinema.org/a/548HmvdKwIpGN4rv2OYHAbkKK.svg" /></a>
 
 #### refer to video #2 - "define if number is even"
@@ -54,6 +53,3 @@ https://asciinema.org/a/ziM8e1khlPtgIcBUGJsWVtf7I
 
 #### refer to video #7 - "use brain-games command to run any game"
 https://asciinema.org/a/rDpkMIZuxpprYW3Pi8GDmKylj
-
-#### test
-https://asciinema.org/a/chqdPy5MK7cqStp3LqbrY80JD
