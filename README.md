@@ -53,3 +53,6 @@ https://asciinema.org/a/ziM8e1khlPtgIcBUGJsWVtf7I
 
 #### refer to video #7 - "use brain-games command to run any game"
 https://asciinema.org/a/rDpkMIZuxpprYW3Pi8GDmKylj
+
+#### test
+https://asciinema.org/a/chqdPy5MK7cqStp3LqbrY80JD
