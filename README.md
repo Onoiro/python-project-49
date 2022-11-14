@@ -37,19 +37,16 @@ To run Brain Games enter one of the following commands:
 <a href="https://asciinema.org/a/548HmvdKwIpGN4rv2OYHAbkKK" target="_blank"><img src="https://asciinema.org/a/548HmvdKwIpGN4rv2OYHAbkKK.svg" /></a>
 
 #### refer to video #2 - "define if number is even"
-https://asciinema.org/a/lBhYD4UfwXLvEfYsDrZ91UxyN
+<a href="https://asciinema.org/a/lBhYD4UfwXLvEfYsDrZ91UxyN" target="_blank"><img src="https://asciinema.org/a/lBhYD4UfwXLvEfYsDrZ91UxyN.svg" /></a>
 
 #### refer to video #3 - "find result of expression"
-https://asciinema.org/a/1uJmPx6E7X2tXosH5EduxahkP
+<a href="https://asciinema.org/a/1uJmPx6E7X2tXosH5EduxahkP" target="_blank"><img src="https://asciinema.org/a/1uJmPx6E7X2tXosH5EduxahkP.svg" /></a>
 
 #### refer to video #4 - "find greatest common divisor"
-https://asciinema.org/a/zDqcESqtWEso4HhOCyKDf7HbB
+<a href="https://asciinema.org/a/zDqcESqtWEso4HhOCyKDf7HbB" target="_blank"><img src="https://asciinema.org/a/zDqcESqtWEso4HhOCyKDf7HbB.svg" /></a>
 
 #### refer to video #5 - "find missing number"
-https://asciinema.org/a/E7zzQbztwLBOFzu1QnWwcUOlf
+<a href="https://asciinema.org/a/E7zzQbztwLBOFzu1QnWwcUOlf" target="_blank"><img src="https://asciinema.org/a/E7zzQbztwLBOFzu1QnWwcUOlf.svg" /></a>
 
 #### refer to video #6 - "define if number is prime"
-https://asciinema.org/a/ziM8e1khlPtgIcBUGJsWVtf7I
-
-#### refer to video #7 - "use brain-games command to run any game"
-https://asciinema.org/a/rDpkMIZuxpprYW3Pi8GDmKylj
+<a href="https://asciinema.org/a/ziM8e1khlPtgIcBUGJsWVtf7I" target="_blank"><img src="https://asciinema.org/a/ziM8e1khlPtgIcBUGJsWVtf7I.svg" /></a>
