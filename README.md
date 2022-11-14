@@ -36,7 +36,6 @@ To run Brain Games enter one of the following commands:
 #### refer to video #1 - "installation of Brain Games"
 https://asciinema.org/a/548HmvdKwIpGN4rv2OYHAbkKK
 <a href="https://asciinema.org/a/548HmvdKwIpGN4rv2OYHAbkKK" target="_blank"><img src="https://asciinema.org/a/548HmvdKwIpGN4rv2OYHAbkKK.svg" /></a>
-[![asciicast](https://asciinema.org/a/548HmvdKwIpGN4rv2OYHAbkKK.svg)](https://asciinema.org/a/548HmvdKwIpGN4rv2OYHAbkKK)
 
 #### refer to video #2 - "define if number is even"
 https://asciinema.org/a/lBhYD4UfwXLvEfYsDrZ91UxyN
