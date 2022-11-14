@@ -1,9 +1,9 @@
 import prompt
-from brain_games import is_even
-from brain_games import calc_it
-from brain_games import find_gcd
-from brain_games import find_number
-from brain_games import is_prime
+from brain_games.games import brain_even
+from brain_games.games import brain_calc
+from brain_games.games import brain_gcd
+from brain_games.games import brain_progression
+from brain_games.games import brain_prime
 
 
 def game_run(game_number):
@@ -55,15 +55,15 @@ def choose_game():
 def get_results(number):
 
     if number == '1':
-        result, value, task = is_even.build_task()
+        result, value, task = brain_even.build_task()
     elif number == '2':
-        result, value, task = calc_it.build_task()
+        result, value, task = brain_calc.build_task()
     elif number == '3':
-        result, value, task = find_gcd.build_task()
+        result, value, task = brain_gcd.build_task()
     elif number == '4':
-        result, value, task = find_number.build_task()
+        result, value, task = brain_progression.build_task()
     elif number == '5':
-        result, value, task = is_prime.build_task()
+        result, value, task = brain_prime.build_task()
 
     return result, value, task
 
