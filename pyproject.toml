@@ -1,8 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.7.1"
-description = "Brain Games is a set of CLI games
- for development of brain activity and improving mental counting skills"
+description = "Brain Games is a set of CLI games"
 authors = ["Andrey Bogatyrev <t2way@yandex.ru>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
