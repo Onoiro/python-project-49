@@ -5,7 +5,8 @@ description = "Brain Games is a set of CLI games"
 authors = ["Andrey Bogatyrev <t2way@yandex.ru>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
-# classifiers = "Programming Language :: Python :: 3"
+classifiers = ["Programming Language :: Python :: 3",
+               "Environment :: Console"]
 repository = "https://github.com/Onoiro/python-project-49"
 
 
