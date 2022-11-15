@@ -20,7 +20,7 @@ def build_task():
     missing_number_index = randint(1, 8)
     current_progression = get_progression(number1, number3)
     right_answer = current_progression[missing_number_index]
-    current_progression[missing_number_index] = '.. '
+    current_progression[missing_number_index] = '..'
     task_string = " ".join(current_progression)
 
     return right_answer, task_string, task
