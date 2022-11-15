@@ -80,12 +80,14 @@ def get_valid_answer(value, number):
             else:
                 print("Your answer isn't valid, type 'yes' or 'no'")
         else:
+            return answer
+        '''else:
             try:
                 answer = int(answer)
             except ValueError:
                 print("Your answer isn't valid, enter an integer")
             else:
-                return answer
+                return answer'''
 
 
 def print_messages(result, answer, name, count):

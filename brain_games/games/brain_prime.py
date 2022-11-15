@@ -1,13 +1,6 @@
 from random import randint
 
 
-def get_number():
-
-    number = randint(1, 100)
-
-    return number
-
-
 def is_prime_number(num):
 
     divider = 2
@@ -24,7 +17,7 @@ def is_prime_number(num):
 def build_task():
 
     task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    current_number = get_number()
+    current_number = randint(1, 100)
     right_answer = is_prime_number(current_number)
 
     return right_answer, current_number, task

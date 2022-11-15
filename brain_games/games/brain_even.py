@@ -1,12 +1,6 @@
 from random import randint
 
 
-def get_number():
-
-    number = randint(-100, 100)
-    return number
-
-
 def is_even_number(num):
 
     if num % 2 == 0:
@@ -19,7 +13,7 @@ def is_even_number(num):
 def build_task():
 
     task = 'Answer "yes" if the number is even, otherwise answer "no".'
-    current_number = get_number()
+    current_number = randint(-100, 100)
     right_answer = is_even_number(current_number)
 
     return right_answer, current_number, task

@@ -1,24 +1,27 @@
-from random import randint
-
-
-def get_number():
-
-    number = randint(-100, 100)
-    return number
+import random
 
 
 def build_task():
 
     task = "What is the result of the expression?"
-    first_number = get_number()
-    second_number = get_number()
-    operator = randint(1, 2)
+    first_number = random.randint(-100, 100)
+    second_number = random.randint(-100, 100)
+    operator = random.choice(['+', '-', '*'])
 
-    if operator == 1:
-        expression = f"{first_number} + {second_number}"
-        right_answer = first_number + second_number
-    elif operator == 2:
-        expression = f"{first_number} - {second_number}"
-        right_answer = first_number - second_number
+    expression = f"{first_number} {operator} {second_number}"
+    right_answer = str(get_result(first_number, second_number, operator))
 
     return right_answer, expression, task
+
+
+def get_result(number1, number2, operation):
+    if operation == '+':
+        result = number1 + number2
+    elif operation == '-':
+        result = number1 - number2
+    elif operation == '*':
+        result = number1 * number2
+
+    return result
+
+    
