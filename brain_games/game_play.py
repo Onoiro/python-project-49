@@ -9,8 +9,6 @@ from brain_games.games import brain_prime
 def game_run(game_number):
 
     user_name = greeting()
-    if game_number == 0:
-        game_number = choose_game()
 
     answers_count = 0
     while answers_count < 3:
@@ -30,26 +28,8 @@ def greeting():
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
+
     return name
-
-
-def choose_game():
-
-    while True:
-        game_task = prompt.string('choose game (type number of game):\n\
-    define if number is even     (1): \n\
-    find result of expression    (2): \n\
-    find greatest common divisor (3): \n\
-    find missing number          (4): \n\
-    define if number is prime    (5): \n\
-    : ')
-
-        if game_task in ('1', '2', '3', '4', '5'):
-            break
-        else:
-            print("Your choose isn't valid, type 1, 2, 3, 4 or 5")
-
-    return game_task
 
 
 def get_results(number):
