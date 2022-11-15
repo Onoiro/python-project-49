@@ -4,7 +4,7 @@ from random import randint
 def is_even_number(num):
 
     if num % 2 == 0:
-        
+
         return True
 
 

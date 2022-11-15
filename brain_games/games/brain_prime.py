@@ -8,7 +8,7 @@ def is_prime_number(num):
         if num % divider == 0:
             return False
         divider += 1
-    
+
     return True
 
 
