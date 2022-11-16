@@ -6,7 +6,7 @@ from brain_games.games import brain_progression
 from brain_games.games import brain_prime
 
 
-def game_run(game_number):
+def run_game(game_number):
 
     user_name = greet_user()
 
