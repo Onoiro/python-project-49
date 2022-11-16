@@ -8,7 +8,7 @@ from brain_games.games import brain_prime
 
 def game_run(game_number):
 
-    user_name = greeting()
+    user_name = greet_user()
 
     answers_count = 0
     while answers_count < 3:
@@ -23,7 +23,7 @@ def game_run(game_number):
             break
 
 
-def greeting():
+def greet_user():
 
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
