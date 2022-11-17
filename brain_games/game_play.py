@@ -1,21 +1,22 @@
 import prompt
-from brain_games.games import brain_even
-from brain_games.games import brain_calc
-from brain_games.games import brain_gcd
-from brain_games.games import brain_progression
-from brain_games.games import brain_prime
+#from brain_games.games import brain_even
+#from brain_games.games import brain_calc
+#from brain_games.games import brain_gcd
+#from brain_games.games import brain_progression
+#from brain_games.games import brain_prime
 
 
-def run_game(game_number):
+def run_game(game):
 
     user_name = greet_user()
+    print(game.TASK)
 
     answers_count = 0
     while answers_count < 3:
-        right_answer, task_value, game_task = get_results(game_number)
-        if answers_count == 0:
-            print(game_task)
-        user_answer = get_valid_answer(task_value, game_number)
+        right_answer, task_value = game.build_task()
+
+        #user_answer = get_valid_answer(task_value, game_number)
+        user_answer = prompt.string(f'Question: {task_value}\nYour answer: ')
 
         answers_count = print_messages(right_answer, user_answer,
                                        user_name, answers_count)
@@ -32,23 +33,7 @@ def greet_user():
     return name
 
 
-def get_results(number):
-
-    if number == '1':
-        result, value, task = brain_even.build_task()
-    elif number == '2':
-        result, value, task = brain_calc.build_task()
-    elif number == '3':
-        result, value, task = brain_gcd.build_task()
-    elif number == '4':
-        result, value, task = brain_progression.build_task()
-    elif number == '5':
-        result, value, task = brain_prime.build_task()
-
-    return result, value, task
-
-
-def get_valid_answer(value, number):
+'''def get_valid_answer(value, number):
 
     while True:
 
@@ -60,7 +45,7 @@ def get_valid_answer(value, number):
             else:
                 print("Your answer isn't valid, type 'yes' or 'no'")
         else:
-            return answer
+            return answer'''
 
 
 def print_messages(result, answer, name, count):

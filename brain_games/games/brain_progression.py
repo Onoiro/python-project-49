@@ -1,5 +1,7 @@
 from random import randint
 
+TASK = "What number is missing in the progression?"
+
 
 def get_progression(first_number, prog_step):
 
@@ -14,7 +16,6 @@ def get_progression(first_number, prog_step):
 
 def build_task():
 
-    task = "What number is missing in the progression?"
     number1 = randint(1, 10)
     number3 = randint(2, 10)
     missing_number_index = randint(1, 8)
@@ -23,4 +24,4 @@ def build_task():
     current_progression[missing_number_index] = '..'
     task_string = " ".join(current_progression)
 
-    return right_answer, task_string, task
+    return right_answer, task_string
