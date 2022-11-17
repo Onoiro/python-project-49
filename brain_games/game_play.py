@@ -1,9 +1,4 @@
 import prompt
-#from brain_games.games import brain_even
-#from brain_games.games import brain_calc
-#from brain_games.games import brain_gcd
-#from brain_games.games import brain_progression
-#from brain_games.games import brain_prime
 
 
 def run_game(game):
@@ -15,7 +10,6 @@ def run_game(game):
     while answers_count < 3:
         right_answer, task_value = game.build_task()
 
-        #user_answer = get_valid_answer(task_value, game_number)
         user_answer = prompt.string(f'Question: {task_value}\nYour answer: ')
 
         answers_count = print_messages(right_answer, user_answer,
@@ -31,21 +25,6 @@ def greet_user():
     print(f'Hello, {name}!')
 
     return name
-
-
-'''def get_valid_answer(value, number):
-
-    while True:
-
-        answer = prompt.string(f'Question: {value}\nYour answer: ')
-
-        if number in ('1', '5'):
-            if answer in ('yes', 'no'):
-                return answer
-            else:
-                print("Your answer isn't valid, type 'yes' or 'no'")
-        else:
-            return answer'''
 
 
 def print_messages(result, answer, name, count):
