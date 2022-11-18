@@ -16,7 +16,7 @@ def build_task():
     start_prog_number = randint(1, 10)
     step_prog_number = randint(1, 10)
     progression = get_progression(start_prog_number, step_prog_number)
-    missing_number_index = randint(1, len(progression))
+    missing_number_index = randint(1, len(progression) - 1)
     right_answer = progression[missing_number_index]
     progression[missing_number_index] = '..'
     task_string = " ".join(progression)
