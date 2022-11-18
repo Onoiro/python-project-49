@@ -13,4 +13,4 @@ def build_task():
         right_answer = 'yes'
     else:
         right_answer = 'no'
-    return right_answer, number
+    return right_answer, str(number)

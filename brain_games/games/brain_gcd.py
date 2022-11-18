@@ -13,8 +13,8 @@ def get_gcd(num1, num2):
 
 
 def build_task():
-    current_number_1 = randint(1, 100)
-    current_number_2 = randint(1, 100)
-    right_answer = str(get_gcd(current_number_1, current_number_2))
-    current_numbers = f'{current_number_1} {current_number_2}'
-    return right_answer, current_numbers
+    number_1 = randint(1, 100)
+    number_2 = randint(1, 100)
+    right_answer = str(get_gcd(number_1, number_2))
+    numbers = f'{number_1} {number_2}'
+    return right_answer, numbers

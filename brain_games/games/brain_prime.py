@@ -17,4 +17,4 @@ def is_prime(num):
 def build_task():
     number = randint(3, 100)
     right_answer = is_prime(number)
-    return right_answer, number
+    return right_answer, str(number)
