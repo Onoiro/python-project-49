@@ -17,7 +17,7 @@ def run_game(game):
                 message = f'Correct!\nCongratulations, {user_name}!'
         else:
             message = f"'{user_answer}' is wrong answer ;(. \
-    Correct answer was '{right_answer}'.\nLet's try again, {user_name}!"
+Correct answer was '{right_answer}'.\nLet's try again, {user_name}!"
             answers_count = 0
         print(message)
         if answers_count == 0:
