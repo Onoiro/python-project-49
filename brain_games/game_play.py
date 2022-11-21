@@ -23,4 +23,3 @@ Correct answer was '{right_answer}'.\nLet's try again, {user_name}!"
             answers_count = 0
             break
     print(message)
-        

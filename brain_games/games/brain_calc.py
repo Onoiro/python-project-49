@@ -4,8 +4,8 @@ TASK = "What is the result of the expression?"
 
 
 def build_task():
-    first_number = random.randint(-100, 100)
-    second_number = random.randint(-100, 100)
+    first_number = random.randint(0, 100)
+    second_number = random.randint(0, 100)
     operator = random.choice(['+', '-', '*'])
     expression = f"{first_number} {operator} {second_number}"
     right_answer = str(get_result(first_number, second_number, operator))
