@@ -15,7 +15,9 @@ The set contains five games:
 
 Minimal system requirements:
 - Linux or MacOS command line
-- python 3.6 and up installed
+- Python 3.8 and up installed
+- Poetry 1.2.2 and up installed
+- Pip 22.2.1 and up installed
 
 To install Brain Games:
 - git clone git@github.com:Onoiro/python-project-49.git

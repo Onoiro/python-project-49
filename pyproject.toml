@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.7.1"
+version = "0.7.5"
 description = "Brain Games is a set of CLI games"
 authors = ["Andrey Bogatyrev <t2way@yandex.ru>"]
 readme = "README.md"
