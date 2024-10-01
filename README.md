@@ -19,7 +19,7 @@ Minimal system requirements:
 - Pip 22.2.1 and up installed
 
 To install Brain Games:
-- git clone git@github.com:Onoiro/python-project-49.git
+- git clone https://github.com/Onoiro/python-project-49.git
 - poetry install
 - make build
 - make package-install
