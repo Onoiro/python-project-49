@@ -20,12 +20,10 @@ Minimal system requirements:
 
 To install Brain Games:
 - git clone https://github.com/Onoiro/python-project-49.git
-- poetry install
-- make build
-- make package-install
+- make install
 
 To uninstall Brain Games:
-- python3 -m pip uninstall hexlet-code
+- make uninstall
 
 To run Brain Games enter one of the following commands:
 - brain-even
